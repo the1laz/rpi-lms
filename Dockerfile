@@ -12,7 +12,7 @@ ENV    SQUEEZE_VOL_LOG /var/log/squeezeboxserver
 ENV 	LANG C.UTF-8
 #ENV 	LMS_URL http://downloads.slimdevices.com/nightly/7.9/sc/3a5fe78/logitechmediaserver_7.9.0~1456927571_all.deb
 #ENV	LMS_URL http://downloads.slimdevices.com/nightly/7.8/sc/3c71ddd/logitechmediaserver_7.8.1~1458035672_all.deb
-ENV	LMS_URL http://downloads.slimdevices.com/LogitechMediaServer_v7.8.0/logitechmediaserver_7.8.0_all.deb
+ENV	LMS_URL http://downloads.slimdevices.com/LogitechMediaServer_v7.9.0/logitechmediaserver_7.9.0_arm.deb
 RUN	curl -Lf -o /tmp/lms.deb $LMS_URL && \
 	dpkg -i /tmp/lms.deb && \
 	rm -f /tmp/lms.deb && \
